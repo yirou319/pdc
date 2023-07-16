@@ -1,0 +1,142 @@
+/* globel1 通用設定 */
+*{box-sizing:border-box ;}
+
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+h1,h2,p{
+	/* 外距 */
+	margin: 0;
+}
+
+a{
+	/* 文字裝飾 */
+	text-decoration: none;
+}
+
+
+.wrapper{
+	height: 100%;
+	width: 100%;
+	/* 背景色 */
+	background-color: green;
+	/* 漸層 */
+	background: rgb(176,215,213);
+	background: radial-gradient(circle, rgba(176,215,213,1) 0%, rgba(87,111,114,1) 91%);	
+	/* 解決margin塌陷問題 */
+	overflow: hidden;
+}
+
+.product{
+	width: 800px;
+	height: 550px;
+	/* 背景色 */
+	background-color: #F0EBE3;
+	/* 外距置中 */
+	margin: 0 auto;
+	/* 上外距 */
+	margin-top: 120px;
+	/* 內距 */
+	padding: 20px;
+	/* 物件陰影 */
+	box-shadow: 10px 20px 20px rgb(0, 66, 90);
+}
+
+.info{
+	/* 將block改成inline block */
+	display: inline-block;
+	width: 50%;
+	/* 垂直對齊 */
+	vertical-align: top;
+	/* 內距 */
+	padding: 60px 50px;
+}
+
+.name{
+	/* 顏色 */
+	color:#675D50;
+	/* 大小 */
+	font-size: 100px;
+	/* 強制不換行 */
+	white-space: nowrap;
+	/* 字體 */
+	font-family:Comic Sans MS, Comic Sans, cursive;
+	/* 文字粗細 */
+	font-weight: 300;
+	/* 文字陰影 */
+	text-shadow: 0px 5px 50px rgb(60, 42, 33);
+	/* 相對定位 */
+	position: relative;
+	/* 下外距 */
+	margin-bottom: 16px;
+	font-style: italic;
+
+}
+
+.price{
+	color: #A9907E;
+	font-size: 40px;
+	font-weight: 900;
+	font-family: American Typewriter, serif;
+
+}
+
+.text{
+	color: grey;
+	line-height: 24px;
+	margin-bottom: 16px;
+	font-family: American Typewriter, serif;
+}
+
+/* 按鈕 */
+.btn{
+	font-family: American Typewriter, serif;
+	/* 將inline改成inline block */
+	display: inline-block;
+	background-color: #675D50;
+	color: #675D50;
+	font-size:24px ;
+	width: 200px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	/* 漸層 */
+	background: rgb(184,157,112);
+	background: radial-gradient(circle, rgba(184,157,112,0.5760679271708684) 0%, rgba(145,125,110,1) 100%);
+
+	/* 字距 */
+	letter-spacing: 8px;
+	/* 導圓角 */
+	border-radius: 20px;
+
+}
+
+.btn:hover{
+	/* 放大 */
+	transform: scale(1.2);
+	color: #394867;
+	transition: .8s;
+	background: rgb(176,215,213);
+	background: radial-gradient(circle, rgba(176,215,213,1) 0%, rgba(87,111,114,1) 91%);
+}
+
+
+
+
+.image{
+	/* 將block改成inline block */
+	display: inline-block;
+	width: 50%;
+	height: 100%;
+	/* 垂直對齊 */
+	vertical-align: top;
+	/* 隱藏多餘的 */
+	overflow: hidden;
+	border-radius: 5px;
+}
+
+.image img{
+	height: 100%;
+}
